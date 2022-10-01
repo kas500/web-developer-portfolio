@@ -1,0 +1,13 @@
+header {
+    margin: 2%;
+    display: flex;
+}
+
+
+figcaption {
+    text-align: center;
+}
+
+#avatar { 
+   max-height: 150px;
+}
