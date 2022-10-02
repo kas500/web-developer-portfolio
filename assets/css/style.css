@@ -5,32 +5,52 @@
     border-color: red;
 }
 
-header {
-    margin: 30px;
+aside, fieldset, header, ul, main, .cards, #contact_me_form {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: grey;
-    border-radius: 10px;
-    border: 10px;
-    position: relative;
-    border: 1px solid red;
-
 }
 
-ul {
-    display: flex;
+aside, fieldset, main, #contact_me_form{
+    flex-direction: column;
+}
+
+header, main , footer {
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+header, section, #about_me_header, #my_projects_header, #contacts_header {
+    border-radius: 10px;
+}
+
+header, section {
+    border: 1px solid red;
+}
+header, #about_me_header, #my_projects_header, #contacts_header {
+    position: relative;
+}
+
+footer, #avatar figcaption, #about_me_header, #my_projects_header, #contacts_header{
+    text-align: center;
+}
+
+header {
+    background-color: grey;
+    border: 10px;
+}
+
+ul li, #avatar {
+    margin: 15px;
 }
 
 ul li {
     justify-content: space-around;
-    margin: 15px;
 }
 a {
     color: black;
 }
 
-ul li a:hover {
+ul li a:hover, .project_info:hover, input[type=submit]:hover {
   color: whitesmoke;
   text-shadow:
       0 0 7px red,
@@ -45,19 +65,15 @@ ul li a:hover {
 
 #quote {
     font-size: 1rem;
-    text-align: rightleft;
+    text-align: left;
     color: white;
     font-style: oblique;
     margin: 20px;
 }
 
-#avatar {
-    margin: 15px;
-}
 
 #avatar figcaption {
     margin-left: 15px;
-    text-align: center;
     font-size: larger;
     text-shadow:
       0 0 7px whitesmoke,
@@ -75,20 +91,8 @@ ul li a:hover {
 }
 
 aside {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     width: 60%;
-
-}
-
-main {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
 article p {
@@ -97,17 +101,13 @@ article p {
 }
 
 section {
-    border: 1px solid red;
-    border-radius: 10px;
     margin-top: 40px;
     background-image: linear-gradient(white, lightgrey);
     height: auto;
     width: 100%;
 }
 #about_me_header, #my_projects_header, #contacts_header{
-    position: relative;
     border: 1px solid black;
-    border-radius: 10px;
     background-color: white;
     margin-top:-20px;
     margin-left: 80%;
@@ -115,11 +115,9 @@ section {
     padding: 10px;
     font-size: 1.2rem;
     width: 150px;
-    text-align: center;
 }
 
 .cards {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -148,18 +146,6 @@ section {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y:-800px;
-}
-
-.project_info:hover, input[type=submit]:hover{
-    box-shadow:
-    0 0 7px red,
-    0 0 10px red,
-    0 0 21px red,
-    0 0 42px lightgrey,
-    0 0 82px lightgrey,
-    0 0 92px lightgrey,
-    0 0 102px lightgrey,
-    0 0 151px lightgrey;
 }
 
 #project_2 {
@@ -191,8 +177,6 @@ section {
 }
 
 #contact_me_form {
-    display: flex;
-    flex-direction: column;
     justify-content: baseline;
     margin-left: 20px;
     margin-right: 20px;
@@ -201,8 +185,6 @@ section {
 }
 
 fieldset{
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -214,14 +196,14 @@ textarea,legend, input[type=submit], footer{
 }
 
 input[type=submit]{
-    width: 25%;
+    width: 40%;
 
 }
 
 footer {
-    text-align: center;
     font-size: smaller;
 }
+
 @media screen and (max-width: 1415px) {
     
     header,main {
@@ -249,6 +231,10 @@ footer {
 
     #about_me_header, #my_projects_header, #contacts_header{
         margin-left: 10%;
+    }
+    .project_info {
+        flex: 1 1 80%;
+        margin: 5px;
     }
 
 }
