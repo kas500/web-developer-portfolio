@@ -1,11 +1,12 @@
 *{
     font-size: 20px;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    border-color: red;
 }
 
 header {
-    margin: 10px;
+    margin: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +21,7 @@ ul {
 
 ul li {
     justify-content: space-around;
-    margin: 20px;;
+    margin: 20px;
 }
 a {
     color: black;
@@ -29,9 +30,9 @@ a {
 ul li a:hover {
   color: whitesmoke;
   text-shadow:
-      0 0 7px whitesmoke,
-      0 0 10px whitesmoke,
-      0 0 21px whitesmoke,
+      0 0 7px red,
+      0 0 10px red,
+      0 0 21px red,
       0 0 42px lightgrey,
       0 0 82px lightgrey,
       0 0 92px lightgrey,
@@ -40,7 +41,7 @@ ul li a:hover {
 }
 
 #quote {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: right;
     color: white;
     font-style: oblique;
@@ -75,30 +76,114 @@ aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+
 }
 
 main {
-    margin: 10px;
+    margin: 30px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+
 }
 
 article p {
     margin-top: 30px;
     margin: 30px 10px 10px;
-    align-items: center;
 }
 
 section {
-    border: 3px solid black;
+    border: 1px solid red;
     border-radius: 10px;
+    margin-top: 40px;
+    background-image: linear-gradient(white, lightgrey);
+    height: auto;
+    width: 100%;
 }
-#about_me_header {
+#about_me_header, #my_projects_header{
     position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
     background-color: white;
     margin-top:-20px;
-    margin-left: 87%;
+    margin-left: 75%;
+    margin-bottom: 60px;
     padding: 10px;
     font-size: 1.2rem;
+    width: 300px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.project_info {
+    box-sizing: border-box;
+    margin: 20px;
+    height: 100px;
+    border: 3px solid red;
+    flex: 1 1 30%;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#my_projects a:first-child {
+    flex: 0 1 100%;
+    height: 200px;
+}
+
+#project_1 {
+    background-image: url('../images/Project_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y:-800px;
+}
+
+.project_info:hover {
+    box-shadow:
+    0 0 7px red,
+    0 0 10px red,
+    0 0 21px red,
+    0 0 42px lightgrey,
+    0 0 82px lightgrey,
+    0 0 92px lightgrey,
+    0 0 102px lightgrey,
+    0 0 151px lightgrey;
+}
+
+#project_2 {
+    background-image: url('../images/Project_2.png');
+    background-repeat: no-repeat;
+    background-size: 160%;
+}
+
+#project_3 {
+    background-image: url('../images/Project_3.png');
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position-x: -20px;
+    background-position-y: -30px;
+}
+
+#project_4 {
+    background-image: url('../images/Project_4.png');
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position-x: -20px;
+    background-position-y: -180px;
+}
+
+.project_label {
+    background-color: red;
+    margin: 10px;
+    border-radius: 5px;
 }
