@@ -13,6 +13,9 @@ header {
     background-color: grey;
     border-radius: 10px;
     border: 10px;
+    position: relative;
+    border: 1px solid red;
+
 }
 
 ul {
@@ -21,7 +24,7 @@ ul {
 
 ul li {
     justify-content: space-around;
-    margin: 20px;
+    margin: 15px;
 }
 a {
     color: black;
@@ -42,7 +45,7 @@ ul li a:hover {
 
 #quote {
     font-size: 1rem;
-    text-align: right;
+    text-align: rightleft;
     color: white;
     font-style: oblique;
     margin: 20px;
@@ -75,8 +78,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    width: 60%;
 
 }
 
@@ -102,17 +104,17 @@ section {
     height: auto;
     width: 100%;
 }
-#about_me_header, #my_projects_header{
-    position: absolute;
+#about_me_header, #my_projects_header, #contacts_header{
+    position: relative;
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
     margin-top:-20px;
-    margin-left: 75%;
-    margin-bottom: 60px;
+    margin-left: 80%;
+    margin-bottom: 5px;
     padding: 10px;
     font-size: 1.2rem;
-    width: 300px;
+    width: 150px;
     text-align: center;
 }
 
@@ -148,7 +150,7 @@ section {
     background-position-y:-800px;
 }
 
-.project_info:hover {
+.project_info:hover, input[type=submit]:hover{
     box-shadow:
     0 0 7px red,
     0 0 10px red,
@@ -186,4 +188,74 @@ section {
     background-color: red;
     margin: 10px;
     border-radius: 5px;
+}
+
+#contact_me_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-left: 20px;
+    text-align: left;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+textarea,legend, input[type=submit]{
+   margin: 20px;
+}
+   #contact_me_form label {
+    margin: 10px;
+}
+
+input[type=submit]{
+    width: 25%;
+
+}
+@media screen and (max-width: 1415px) {
+    
+    header,main {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items:stretch;
+    }
+    #quote {
+        display: none;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    #about_me_header, #my_projects_header, #contacts_header{
+        margin-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    #quote {
+        display: none;
+    }
+
+
+
 }
