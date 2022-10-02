@@ -11,6 +11,7 @@ header {
     align-items: center;
     background-color: grey;
     border-radius: 10px;
+    border: 10px;
 }
 
 ul {
@@ -53,6 +54,16 @@ ul li a:hover {
 #avatar figcaption {
     margin-left: 15px;
     text-align: center;
+    font-size: larger;
+    text-shadow:
+      0 0 7px whitesmoke,
+      0 0 10px whitesmoke,
+      0 0 21px whitesmoke,
+      0 0 42px lightgrey,
+      0 0 82px lightgrey,
+      0 0 92px lightgrey,
+      0 0 102px lightgrey,
+      0 0 151px lightgrey;
 }
 
 #avatar img { 
@@ -67,5 +78,27 @@ aside {
 }
 
 main {
-    
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article p {
+    margin-top: 30px;
+    margin: 30px 10px 10px;
+    align-items: center;
+}
+
+section {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#about_me_header {
+    position: absolute;
+    background-color: white;
+    margin-top:-20px;
+    margin-left: 87%;
+    padding: 10px;
+    font-size: 1.2rem;
 }
