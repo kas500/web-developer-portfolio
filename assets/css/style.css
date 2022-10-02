@@ -1,8 +1,16 @@
+*{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
 header {
-    margin: 2%;
+    margin: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    background-color: grey;
+    border-radius: 10px;
 }
 
 ul {
@@ -11,13 +19,53 @@ ul {
 
 ul li {
     justify-content: space-around;
+    margin: 20px;;
+}
+a {
+    color: black;
+}
+
+ul li a:hover {
+  color: whitesmoke;
+  text-shadow:
+      0 0 7px whitesmoke,
+      0 0 10px whitesmoke,
+      0 0 21px whitesmoke,
+      0 0 42px lightgrey,
+      0 0 82px lightgrey,
+      0 0 92px lightgrey,
+      0 0 102px lightgrey,
+      0 0 151px lightgrey;
+}
+
+#quote {
+    font-size: 0.8rem;
+    text-align: right;
+    color: white;
+    font-style: oblique;
     margin: 20px;
 }
 
-figcaption {
+#avatar {
+    margin: 15px;
+}
+
+#avatar figcaption {
+    margin-left: 15px;
     text-align: center;
 }
 
-#avatar { 
+#avatar img { 
    max-height: 150px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    
 }
