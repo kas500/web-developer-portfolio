@@ -195,6 +195,8 @@ section {
     flex-direction: column;
     justify-content: baseline;
     margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -204,7 +206,7 @@ fieldset{
     justify-content: space-between;
 }
 
-textarea,legend, input[type=submit]{
+textarea,legend, input[type=submit], footer{
    margin: 20px;
 }
    #contact_me_form label {
@@ -214,6 +216,11 @@ textarea,legend, input[type=submit]{
 input[type=submit]{
     width: 25%;
 
+}
+
+footer {
+    text-align: center;
+    font-size: smaller;
 }
 @media screen and (max-width: 1415px) {
     
