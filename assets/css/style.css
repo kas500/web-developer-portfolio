@@ -249,6 +249,10 @@ footer {
         margin: 5px;
     }
 
+    #project_1 {
+        background-size: 200%;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -259,6 +263,9 @@ footer {
 
     #quote {
         display: none;
+    }
+    #project_1 {
+        background-size: 1000%;
     }
 
 }
