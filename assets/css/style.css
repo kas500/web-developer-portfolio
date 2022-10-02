@@ -50,7 +50,7 @@ a {
     color: black;
 }
 
-ul li a:hover, .project_info:hover, input[type=submit]:hover {
+ul li a:hover {
   color: whitesmoke;
   text-shadow:
       0 0 7px red,
@@ -61,6 +61,18 @@ ul li a:hover, .project_info:hover, input[type=submit]:hover {
       0 0 92px lightgrey,
       0 0 102px lightgrey,
       0 0 151px lightgrey;
+}
+
+.project_info:hover, input[type=submit]:hover{
+    box-shadow:
+    0 0 7px red,
+    0 0 10px red,
+    0 0 21px red,
+    0 0 42px lightgrey,
+    0 0 82px lightgrey,
+    0 0 92px lightgrey,
+    0 0 102px lightgrey,
+    0 0 151px lightgrey;
 }
 
 #quote {
@@ -248,7 +260,5 @@ footer {
     #quote {
         display: none;
     }
-
-
 
 }
