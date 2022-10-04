@@ -258,6 +258,7 @@ footer {
 @media screen and (max-width: 320px) {
     header {
         margin-left: 5%;
+        margin-right: 5%;
         width: 100%;
     }
 
